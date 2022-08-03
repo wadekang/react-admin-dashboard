@@ -1,6 +1,6 @@
 .sidebar {
     flex: 1;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 70px);
     background-color: rgb(240, 239, 239);
 
     position: sticky;
@@ -33,7 +33,7 @@
     align-items: center;
     border-radius: 10px;
 }
-.sidebarListItem:active,
+.sidebarListItem.active,
 .sidebarListItem:hover {
     background-color: rgb(212, 209, 235);
 }
