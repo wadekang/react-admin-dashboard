@@ -19,6 +19,7 @@
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+    margin-right: 10px;
 }
 
 .widgetSmList {
@@ -61,4 +62,8 @@
 .widgetSmIcon {
     font-size: 16px !important;
     margin-right: 5px;
+}
+
+.widgetSmProfile {
+    display: flex;
 }

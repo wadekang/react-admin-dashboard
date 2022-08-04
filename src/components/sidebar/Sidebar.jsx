@@ -5,6 +5,8 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import { BarChartOutlined, Feedback, LocalAtmOutlined, MailOutline, Message, PersonOutline, StorefrontOutlined } from "@material-ui/icons";
 
+import { Link } from 'react-router-dom';
+
 export default function Sidebar() {
     return (
         <div className="sidebar">
@@ -12,10 +14,12 @@ export default function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem active">
-                            <HomeWorkIcon className="sidebarIcon"/>
-                            Home
-                        </li>
+                        <Link to="/" className="link">
+                            <li className="sidebarListItem">
+                                <HomeWorkIcon className="sidebarIcon"/>
+                                Home
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <TrendingUpIcon className="sidebarIcon" />
                             Analystics
@@ -31,14 +35,18 @@ export default function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Quick</h3>
                     <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <PersonOutline className="sidebarIcon"/>
-                            Users
-                        </li>
-                        <li className="sidebarListItem">
-                            <StorefrontOutlined className="sidebarIcon" />
-                            Products
-                        </li>
+                        <Link to="/users" className="link">
+                            <li className="sidebarListItem">
+                                <PersonOutline className="sidebarIcon"/>
+                                Users
+                            </li>
+                        </Link>
+                        <Link to="/products" className="link">
+                            <li className="sidebarListItem">
+                                <StorefrontOutlined className="sidebarIcon" />
+                                Products
+                            </li>
+                        </Link>
                         <li className="sidebarListItem">
                             <LocalAtmOutlined className="sidebarIcon" />
                             Transactions
